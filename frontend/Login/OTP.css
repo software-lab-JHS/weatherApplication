@@ -1,0 +1,73 @@
+/* OTP.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #DCF2F1; /* Background color */
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px; /* Increase the width */
+    background-color: white;
+    border-radius: 20px; /* Increase the border radius */
+    padding: 40px; /* Increase the padding */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Adding 3D effect */
+}
+
+.title {
+    font-size: 24px; /* Increase the font size */
+    font-weight: bold;
+    color: black;
+    text-align: center; /* Center alignment */
+}
+
+.message {
+    font-size: 18px; /* Increase the font size */
+    color: #a3a3a3;
+    margin-top: 10px; /* Increase the margin */
+    text-align: center;
+}
+
+.inputs {
+    margin-top: 20px; /* Increase the margin */
+    display: flex;
+}
+
+.inputs input {
+    width: 48px; /* Increase the width */
+    height: 48px; /* Increase the height */
+    font-size: 24px; /* Increase the font size */
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #d2d2d2;
+    margin: 0 10px; /* Adjust the margin */
+    transition: border-bottom 0.3s ease; /* Adding transition effect */
+}
+
+.inputs input:focus {
+    border-bottom: 2px solid royalblue;
+    outline: none;
+}
+
+.action {
+    margin-top: 30px; /* Increase the margin */
+    padding: 16px 24px; /* Increase the padding */
+    border-radius: 12px; /* Increase the border radius */
+    font-size: 20px; /* Increase the font size */
+    border: none;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+    align-self: center; /* Align to center */
+    transition: background-color 0.3s ease; /* Adding transition effect */
+}
+
+.action:hover {
+    background-color: #0056b3; /* Changing background color on hover */
+}
