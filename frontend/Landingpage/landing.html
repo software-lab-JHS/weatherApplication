@@ -1,13 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <link rel="stylesheet" href="../css/landing.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://lottie.host/f91e75f5-42b5-42a6-97de-59ab680b9e15/ABv4tj7w6G.json"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
 </head>
 <body>
-    <h1>Hello, Everyone</h1>
-    <h2>Good Morning</h2>
-    <h3>Hello world this is my code for weather application </h3>
+
+    <div class="ladingpage-navbar">
+        <img src="../css/weatherIcon.png" class="landingpage-navbar">
+    </div>
+
+    <div class="lottie-animation">
+        <dotlottie-player 
+            src="https://lottie.host/f91e75f5-42b5-42a6-97de-59ab680b9e15/ABv4tj7w6G.json" 
+            background="transparent" 
+            speed="1" 
+            style="width: 300px; height: 300px;"
+            loop autoplay>
+        </dotlottie-player>
+    </div>
+
+    <div class="landing-flex-1">
+        <div class="landing-gif">
+            <img src="../css/Weather.gif">
+        </div>
+
+        <div class="flex-1-text">
+            <div class="flex-1-subtext">
+                <div class="flex-2-subtext">
+                    <div class="stay-ahead">
+                        <b><h1>Stay Ahead</h1></b>
+                    </div>
+                <div>
+                    <h1>, Weather Wise </h1>
+                </div>
+            </div>
+
+             <h1>Your Forecast Comapnion!</h1>
+             <hr class="horizontal-line">
+
+            </div>
+        </div>
+    </div>
+
+    <button onclick="redirectToRegister()">Sign up</button>
+
+ <script>
+    
+      function redirectToRegister() {
+            window.location.href = '/register';
+        }
+
+ </script>
 </body>
 </html>

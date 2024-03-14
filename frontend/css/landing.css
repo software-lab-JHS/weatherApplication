@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.landingpage-navbar {
+    height: 100px;
+    width: 100px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    scale: 2;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.landing-gif {
+    margin-left: 10%;
+}
+
+.landing-flex-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-1-text {
+    padding-top: 250px;
+    margin-right: 22%;
+}
+
+.flex-1-text h1 {
+    padding: 10px;
+}
+
+.stay-ahead{
+    background-color: greenyellow;
+    border-radius:5%;
+}
+
+.flex-2-subtext {
+    display: flex;
+}
+
+.horizontal-line{
+    width:335px; 
+    border:2px solid #FF4B2B;
+    margin-left: 20%;
+}
+
+.lottie-animation{
+    margin-left:65%; 
+    height:25px; 
+    width:25px; 
+    margin-top:50px; 
+}

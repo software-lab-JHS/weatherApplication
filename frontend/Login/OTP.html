@@ -4,21 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTP Verification</title>
-    <link href="OTP.css" rel="stylesheet">
+    <link href="../css/OTP.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <form class="form">
+        <form class="form" action="/newpass" method="post">
             <div class="title">OTP Verification</div>
             
             <p class="message">We have sent a verification code to your email</p>
-            <div class="inputs">
-                <input id="input1" type="text" maxlength="1">
-                <input id="input2" type="text" maxlength="1">
-                <input id="input3" type="text" maxlength="1">
-                <input id="input4" type="text" maxlength="1">
-                <input id="input5" type="text" maxlength="1">
-                <input id="input6" type="text" maxlength="1">
+            <div>
+                <input type="text" placeholder="6-digit-pin" name="sixpin" required>
             </div>
             <button class="action">Verify Me</button>
         </form>
