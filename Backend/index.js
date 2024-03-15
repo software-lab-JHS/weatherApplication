@@ -43,6 +43,10 @@ app.get("/newpass", (req,res) =>{
     res.sendFile(path.join(frontendPath, "Login" ,"resetPassword.html"))
 })
 
+app.get("/success", (req,res) => {
+    res.sendFile(path.join(frontendPath, "Mainpage" , "index.html"))
+})
+
 app.post("/register", async (req, res) => {
     try {
         const email = req.body.email;
@@ -50,7 +54,7 @@ app.post("/register", async (req, res) => {
         const useremail = await Register.findOne({ email: email });
 
         if (useremail && useremail.password==password) {
-        res.send("Thank you for logging in, Log in was successful");
+            res.sendFile(path.join(frontendPath , "Mainpage", "index.html"));
         } else {
         res.send("password is not matching");
         }
@@ -167,6 +171,8 @@ app.post('/newpass', (req, res) => {
     }
 });
 
+
+
 app.post('/success', async (req, res) => {
     try {
         entPass = req.body.newpassword;
@@ -178,6 +184,7 @@ app.post('/success', async (req, res) => {
                 user.password = entPass;
                 res.send("Your password has been successfully reset");
                 await user.save();
+                
             } else {
                 res.send("User does not exist");
             }

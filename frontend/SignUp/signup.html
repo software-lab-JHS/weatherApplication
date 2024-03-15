@@ -73,7 +73,10 @@ signInButton.addEventListener('click', () => {
 });
 
 function redirectToSignUp(){
-    window.location.href='/register'
+    container.classList.remove("right-panel-active");
+    setTimeout(() => {
+        window.location.href = '/register';
+    }, 400); // Adjust the delay time as needed
 }
 </script>
 </body>

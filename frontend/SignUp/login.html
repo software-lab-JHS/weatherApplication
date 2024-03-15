@@ -72,9 +72,12 @@ signInButton.addEventListener('click', () => {
 
 
 function redirectToLogin(){
-	window.location.href = '/login';
-	
+    container.classList.remove("right-panel-active");
+    setTimeout(() => {
+        window.location.href = '/login';
+    }, 400); // Adjust the delay time as needed
 }
+
 
 </script>
 </body>
