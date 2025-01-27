@@ -1,2 +1,1 @@
-# weatherApplication
-# sample text 1
+# Weather Application
